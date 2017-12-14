@@ -1,0 +1,77 @@
+﻿@model IEnumerable<GarageApp_2._0.Models.ParkedVehicle>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>View All</h2>
+
+<p>
+    @Html.ActionLink("Back", "Index") |
+    @Html.ActionLink("Park", "Park") |
+    @Html.ActionLink("Detail View", "DetailView") |
+
+</p>
+<table class="table">
+    <tr>
+        <th>
+            Vehicle Type
+        </th>
+        <th>
+            Registration Number
+        </th>
+        <th>
+            Color
+        </th>
+        <th>
+            Brand
+        </th>
+        <th>
+            Model
+        </th>
+        <th>
+            Number Of Wheels
+        </th>
+        <th>
+            Parked Time
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.vehicleType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.RegistrationNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Color)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Brand)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Model)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumberOfWheels)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TimeParked)
+            </td>
+            <td>
+
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @Html.ActionLink("Unpark", "UnPark", new { id = item.Id })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+
+

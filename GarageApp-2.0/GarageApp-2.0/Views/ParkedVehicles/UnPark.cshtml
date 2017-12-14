@@ -1,0 +1,81 @@
+﻿@model GarageApp_2._0.Models.ParkedVehicle
+
+@{
+    ViewBag.Title = "Un-Park";
+}
+
+<h2>Unpark</h2>
+
+<h2>Vehicle Details and Parking Price</h2>
+<h3>Parking Price 30 Sek Per Hour</h3>
+<div>
+    <br/>
+    <br />
+
+
+    <p>Are you sure you want to upark this vehicle?</p>
+    <hr />
+    @Html.ActionLink(" No? Go back ", "Index")
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.vehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RegistrationNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Color)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+          <dt>
+            @Html.DisplayNameFor(model => model.TimeParked)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeParked)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.CheckoutTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CheckoutTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalTime)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TotalPrice)
+        </dd>*@
+
+
+
+    </dl>
+
+ 
+</div>

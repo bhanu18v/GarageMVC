@@ -1,0 +1,76 @@
+﻿@model GarageApp_2._0.Models.ParkedVehicle
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<br /><br /><br /><br />
+<h2>Details</h2>
+
+<div>
+    <h4>Parked Vehicle</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Vehicle Type
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.vehicleType)
+        </dd>
+
+        <dt>
+            Registration Number
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RegistrationNumber)
+        </dd>
+
+        <dt>
+            Color
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Color)
+        </dd>
+
+        <dt>
+            Brand
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Brand)
+        </dd>
+
+        <dt>
+            Model
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Model)
+        </dd>
+
+        <dt>
+            Number Of Wheels 
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NumberOfWheels)
+        </dd>
+
+        <dt>
+            Time Parked
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeParked)
+        </dd>
+
+    </dl>
+</div>
+<br /><br />
+<p>
+  
+    @Html.ActionLink("Back to List", "Index")
+</p>
