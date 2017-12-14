@@ -8,7 +8,7 @@ namespace GarageApp_2._0.Models
 {
     public class ParkedVehicle
     {
-
+           
 
         public int Id { get; set; }
 
